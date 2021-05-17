@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        ul, li {list-style: none;}
+
+        body{height: 1000px;}
+
+        header {position: fixed; left: 0px; top: 0px; width: 100%; text-align: center;}
+        section { margin-top: 160px;}
+        .logo {text-align: cetner; background-color: #fff;}
+        .menu {background-color: #000; text-align: center;}
+        .menu > li {display: inline-block;}
+        .menu > li > a {display: block; padding: 20px; color: #fff; text-decoration: none;}
+        .menu > li > a:hover {background-color: #777;}
+
+        /* 
+        sticky
+        1. top, bottom, left, right중 한가지 옵션이 반드시 존재해야함
+        2. 어린 부모요소는 overflow: hidden이 있으면 동작하지 않는다.
+        3. top속성에는 스크롤이 이동됬을 때 fixed되는 지점을 기록한다 (헤더가 고정이라면 헤더의 높이만큼)
+        
+         */
+
+        .inner1 {background-color: thistle; height: 500px;}
+        .inner2 {background-color: tomato; position: sticky; top: 160px; z-index: 100;}
+        .inner3 {background-color: teal; height: 1500px;}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="123.PNG">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="inner1">내용</div>
+        <div class="inner2">제목</div>
+        <div class="inner3"></div>
+    </section>
+</body>
+</html>
