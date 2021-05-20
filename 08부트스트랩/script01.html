@@ -16,22 +16,26 @@
     <script src="js/bootstrap.js"></script>
 
     <style>
-        .box{background-color: aqua;}
+        .box {background-color: aqua;}
     </style>
+
 </head>
 <body>
-    <h2>부트스트랩을 활용한 반응형 그리드</h2>
-    <!-- 부트스트랩의 그리드 사용방법 contained  안에 row클래스안에지정된 그리드 표기형식-->
+
+    <h2>부트스트랩을 활용한 반응형그리드</h2>
+
+    <!-- 부트스트랩의 그리드 사용방법 container 안에 row클래스 안에 지정된 그리드 표기형식 -->
 
     <section>
         <div class="container">
+            <!-- lg(1200px이상) 2칸씩배치 -->
             <div class="row">
                 <div class="col-lg-2 box">박스1</div>
                 <div class="col-lg-2 box">박스1</div>
                 <div class="col-lg-2 box">박스1</div>
                 <div class="col-lg-2 box">박스1</div>
                 <div class="col-lg-2 box">박스1</div>
-                <div class="col-lg-2 box">박스1</div>   
+                <div class="col-lg-2 box">박스1</div>
             </div>
 
             <hr/>
@@ -42,11 +46,11 @@
                 <div class="col-md-2 box">박스2</div>
                 <div class="col-md-2 box">박스2</div>
                 <div class="col-md-2 box">박스2</div>
-                <div class="col-md-2 box">박스2</div>   
+                <div class="col-md-2 box">박스2</div>
             </div>
 
             <hr/>
-            <!-- sm(768이상) 2칸씩배치 -->
+            <!-- sm(768px이상) 2칸씩배치 -->
             <div class="row">
                 <div class="col-sm-2 box">박스3</div>
                 <div class="col-sm-2 box">박스3</div>
@@ -57,14 +61,23 @@
             </div>
 
             <hr/>
+
+            <!-- xs(767px이하) 절반배치 -->
             <div class="row">
                 <div class="col-xs-6 box">박스4</div>
                 <div class="col-xs-6 box">박스4</div>
-                
             </div>
+
+
+
+
+            
 
         </div>
+
     </section>
-    
+
+
+
 </body>
 </html>

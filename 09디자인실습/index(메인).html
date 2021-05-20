@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 css파일참조 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 부트스트랩 js를 사용하기 위해서 jquery라이브러리 참조 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 부트스트랩 js참조 -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- 개인 커스텀 디자인 -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+    
+    <header class="custom_header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><!-- 로고영역 -->
+                        <img src="img/logo.svg" width="30">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">메인</a></li>
+                    
+                        <li><a href="#">예약</a></li>
+                    
+                        <li><a href="#">QNA</a></li>
+                    </ul>
+                    
+                    <!-- 우측 회원메뉴 -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">회원메뉴<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- 검색버튼 (우측배치 navbar-right) -->
+                    <form class="navbar-form navbar-right" action="##">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="search" name="search">
+                          <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                              <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 슬라이더 영역 -->
+    <section>
+        <div class="container-fluid"><!-- 전체그리드 -->
+            <div class="row">
+                <div class="col-xs-12 slide-list">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/slider1.jpg" alt="Los Angeles">
+                            </div>
+                
+                            <div class="item">
+                                <img src="img/slider2.jpg" alt="Chicago">
+                            </div>
+                
+                            <div class="item">
+                                <img src="img/slider3.png" alt="New York">
+                            </div>
+                        </div>
+                
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <ul class="col-xs-12 prod-wrap"> <!-- xs에서는 1칸, sm이상에서는 절반 (바깥상자)-->
+                    <li class="col-sm-6 prod-inner"> <!-- 중간상자 -->
+                        <a href="##"> <!-- 안쪽상자 -->
+                            <img src="img/prod1.jpg" alt="상품1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-6 prod-inner"> <!-- 중간상자 -->
+                        <a href="##"> <!-- 안쪽상자 -->
+                            <img src="img/prod2.jpg" alt="상품1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-6 col-md-3 prod-inner"> <!-- 중간상자 -->
+                        <a href="##"> <!-- 안쪽상자 -->
+                            <img src="img/prod3.jpg" alt="상품1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-6 col-md-3 prod-inner"> <!-- 중간상자 -->
+                        <a href="##"> <!-- 안쪽상자 -->
+                            <img src="img/prod4.jpg" alt="상품1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-6 col-md-3 prod-inner"> <!-- 중간상자 -->
+                        <a href="##"> <!-- 안쪽상자 -->
+                            <img src="img/prod5.jpg" alt="상품1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-6 col-md-3 prod-inner"> <!-- 중간상자 -->
+                        <a href="##"> <!-- 안쪽상자 -->
+                            <img src="img/prod6.jpg" alt="상품1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-12 col-md-6 prod-inner"> <!-- 중간상자 -->
+                        <a href="##"> <!-- 안쪽상자 -->
+                            <img src="img/prod7.jpg" alt="상품1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-6 col-md-3 prod-inner"> <!-- 중간상자 -->
+                        <a href="##"> <!-- 안쪽상자 -->
+                            <img src="img/prod8.jpg" alt="상품1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-6 col-md-3 prod-inner"> <!-- 중간상자 -->
+                        <a href="##"> <!-- 안쪽상자 -->
+                            <img src="img/prod9.jpg" alt="상품1">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="arrow hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="padding: 0;">
+            <h3>오늘의 핫~! 상품리스트</h3>
+            <ul class="row blog-style">
+                <li class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="blog-wrap"><!-- 부모영역 -->
+                        <div class="blog-img">
+                            <img src="img/blog1.jpg"><!-- 이미지영역 -->
+                        </div>
+                        <div class="blog-content"><!-- 글영역 -->
+                            <p>라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</p>
+                            <div class="blog-info"><!-- 부모영역 -->
+                                <ul><!-- left -->
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>                                   </li>
+                                </ul>
+                                <strong>99,000원</strong><!-- right -->
+                            </div>
+                        </div>
+                        <!-- 호버영역-->
+                        <div class="blog-content-hover">
+                            <a href="##">라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="blog-wrap"><!-- 부모영역 -->
+                        <div class="blog-img">
+                            <img src="img/blog2.jpg"><!-- 이미지영역 -->
+                        </div>
+                        <div class="blog-content"><!-- 글영역 -->
+                            <p>라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</p>
+                            <div class="blog-info"><!-- 부모영역 -->
+                                <ul><!-- left -->
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>                                   </li>
+                                </ul>
+                                <strong>99,000원</strong><!-- right -->
+                            </div>
+                        </div>
+                        <!-- 호버영역-->
+                        <div class="blog-content-hover">
+                            <a href="##">라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="blog-wrap"><!-- 부모영역 -->
+                        <div class="blog-img">
+                            <img src="img/blog3.jpg"><!-- 이미지영역 -->
+                        </div>
+                        <div class="blog-content"><!-- 글영역 -->
+                            <p>라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</p>
+                            <div class="blog-info"><!-- 부모영역 -->
+                                <ul><!-- left -->
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>                                   </li>
+                                </ul>
+                                <strong>99,000원</strong><!-- right -->
+                            </div>
+                        </div>
+                        <!-- 호버영역-->
+                        <div class="blog-content-hover">
+                            <a href="##">라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="blog-wrap"><!-- 부모영역 -->
+                        <div class="blog-img">
+                            <img src="img/blog4.jpg"><!-- 이미지영역 -->
+                        </div>
+                        <div class="blog-content"><!-- 글영역 -->
+                            <p>라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</p>
+                            <div class="blog-info"><!-- 부모영역 -->
+                                <ul><!-- left -->
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>                                   </li>
+                                </ul>
+                                <strong>99,000원</strong><!-- right -->
+                            </div>
+                        </div>
+                        <!-- 호버영역-->
+                        <div class="blog-content-hover">
+                            <a href="##">라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="blog-wrap"><!-- 부모영역 -->
+                        <div class="blog-img">
+                            <img src="img/blog5.jpg"><!-- 이미지영역 -->
+                        </div>
+                        <div class="blog-content"><!-- 글영역 -->
+                            <p>라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</p>
+                            <div class="blog-info"><!-- 부모영역 -->
+                                <ul><!-- left -->
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star"></i></li>                                   </li>
+                                    <li><i class="glyphicon glyphicon-star-empty"></i></li>                                   </li>
+                                </ul>
+                                <strong>99,000원</strong><!-- right -->
+                            </div>
+                        </div>
+                        <!-- 호버영역-->
+                        <div class="blog-content-hover">
+                            <a href="##">라벨영 쇼킹비타민 우유미백크림 미백최강 즉각톤업+기미파괴</a>
+                        </div>
+                    </div>
+                </li>
+               
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <div class="copyright">
+                        <a href=""><img src="img/logo.svg" width="30"></a>
+                        Coding404 | 대표자 : 홍길동 | E-MAIL : hong0817@gmail.com<br/>
+                        개인정보보호책임자 : 홍길동 | KG-ITbank에서 오프라인 강의를 진행합니다<br/>
+                        주소 : 서울시 강남구<br/>
+                        <address>©Bootstrap. ALL RIGHTS RESERVED</address>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <ul class="footer-menu">
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">유용한정보</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">QNA</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>        
+    </footer>
+
+
+
+</body>
+</html>

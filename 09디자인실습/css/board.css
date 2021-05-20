@@ -1,0 +1,36 @@
+/* 나이키 상품 */
+/*  호버 영역 */
+.prod-list > .prod-color > ul {
+    overflow: hidden;
+}
+
+
+.prod-list > .prod-color > ul > li {
+    width: 50px;
+    float: left;
+}
+/* 상품 영역 */
+
+.prod-content {
+    overflow: hidden;
+}
+
+.prod-content .info {
+    float: left;
+}
+
+.prod-content .price{
+    float: right;
+}
+
+.prod-content > .info > span {
+    display: block;
+}
+
+.prod-img > img {
+    width: 100%;
+}
+
+/* 숙제 - 이미지영역의 margin-top을 *값으로 위로 
+   trnsition에 대한 내용을 확인
+*/

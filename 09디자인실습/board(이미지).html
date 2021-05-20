@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 css파일참조 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 부트스트랩 js를 사용하기 위해서 jquery라이브러리 참조 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 부트스트랩 js참조 -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- 개인 커스텀 디자인 -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/board.css">
+
+
+
+</head>
+<body>
+    
+    <header class="custom_header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><!-- 로고영역 -->
+                        <img src="img/logo.svg" width="30">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">메인</a></li>
+                    
+                        <li><a href="#">예약</a></li>
+                    
+                        <li><a href="#">QNA</a></li>
+                    </ul>
+                    
+                    <!-- 우측 회원메뉴 -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">회원메뉴<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- 검색버튼 (우측배치 navbar-right) -->
+                    <form class="navbar-form navbar-right" action="##">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="search" name="search">
+                          <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                              <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="prod-list"><!--부모영역-->
+                        <div class="prod-img"> <!--이미지영역-->
+                            <img src="img/nike1.jpg">
+                        </div>
+                        <div class="prod-content"><!--부모영역-->
+                            <div class="info"><!--left-->
+                                <span>나이키 에어맥스</span>
+                                <span>MEN 신발 라이프스타일</span>
+                                <span>.8컬러</span>
+                            </div>
+                        </div>
+                        <div class="price"><!--right-->
+                            <strong>199,000원</strong>
+                        </div>
+                    </div>
+                    <div class="prod-color"><!--호버영역-->
+                        <ul>
+                            <li><img src="img/color1.jpg"></li>
+                            <li><img src="img/color2.jpg"></li>
+                            <li><img src="img/color3.jpg"></li>
+                            <li><img src="img/color4.jpg"></li>
+                            <li><img src="img/color5.jpg"></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <div class="copyright">
+                        <a href=""><img src="img/logo.svg" width="30"></a>
+                        Coding404 | 대표자 : 홍길동 | E-MAIL : hong0817@gmail.com<br/>
+                        개인정보보호책임자 : 홍길동 | KG-ITbank에서 오프라인 강의를 진행합니다<br/>
+                        주소 : 서울시 강남구<br/>
+                        <address>©Bootstrap. ALL RIGHTS RESERVED</address>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <ul class="footer-menu">
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">유용한정보</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">QNA</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>        
+    </footer>
+
+
+
+</body>
+</html>
